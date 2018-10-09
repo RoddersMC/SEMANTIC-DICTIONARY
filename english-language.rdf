@@ -1,0 +1,23 @@
+<rdf:RDF
+    xmlns = "http://www.semanticDictionary.org/dic/2018/english#"
+    xmlns:eng = "http://www.semanticDictionary.org/dic/2018/english#"
+    xmlns:owl ="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd ="http://www.w3.org/2001/XMLSchema#"> 
+
+<owl:Ontology rdf:about="">
+    <rdfs:comment>An OWL ontology for the english language</rdfs:comment>
+    <rdfs:label>English Language Dictionary</rdfs:label>
+</owl:Ontology>
+
+<!-- Search:TYPE Definitions -->
+<owl:class rdf:ID="Noun"/>
+<owl:class rdf:ID="Verb"/>
+<owl:class rdf:ID="Adjective"/>
+<owl:class rdf:ID="Pronoun"/>
+<owl:class rdf:ID="Preposition"/>
+<owl:class rdf:ID="Conjunction"/>
+<owl:class rdf:ID="Interjection"/>
+
+</rdf:RDF>
