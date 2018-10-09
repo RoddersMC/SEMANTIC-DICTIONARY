@@ -11,13 +11,40 @@
     <rdfs:label>English Language Dictionary</rdfs:label>
 </owl:Ontology>
 
+<owl:thing rdf:ID="Word">
+
 <!-- Search:TYPE Definitions -->
-<owl:class rdf:ID="Noun"/>
-<owl:class rdf:ID="Verb"/>
-<owl:class rdf:ID="Adjective"/>
-<owl:class rdf:ID="Pronoun"/>
-<owl:class rdf:ID="Preposition"/>
-<owl:class rdf:ID="Conjunction"/>
-<owl:class rdf:ID="Interjection"/>
+<owl:class rdf:ID="Type">
+    <rdfs:subClassOf>
+        <owl:objectProperty rdf:resource="#hasType"/>
+    </rdfs:subClassOf>
+</owl:class>
+
+<owl:objectProperty rdf:ID="hasType">
+    <rdfs:domain rdf:resource="#Type">
+    <rdfs:range rdf:rsource="#Word">
+</owl:objectProperty>
+
+<owl:class rdf:ID="Noun">
+    <rdfs:subClassOf rdf:resource="#Type">
+</owl:class>
+<owl:class rdf:ID="Verb">
+    <rdfs:subClassOf rdf:resource="#Type">
+</owl:class>
+<owl:class rdf:ID="Adjective">
+    <rdfs:subClassOf rdf:resource="#Type">
+</owl:class>/>
+<owl:class rdf:ID="Pronoun">
+    <rdfs:subClassOf rdf:resource="#Type">
+</owl:class>
+<owl:class rdf:ID="Preposition">
+    <rdfs:subClassOf rdf:resource="#Type">
+</owl:class>
+<owl:class rdf:ID="Conjunction">
+    <rdfs:subClassOf rdf:resource="#Type">
+</owl:class>
+<owl:class rdf:ID="Interjection">
+    <rdfs:subClassOf rdf:resource="#Type">
+</owl:class>
 
 </rdf:RDF>
